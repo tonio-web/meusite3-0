@@ -1,0 +1,92 @@
+<body>
+      <h1>Bem-vindo ao meu site!</h1>
+    
+
+      <div id="game">
+        <h2>Tente adivinhar o número (entre 1 e 10):</h2>
+        <input type="number" id="guess" min="1" max="10">
+        <button onclick="checkGuess()">Tentar</button>
+        <p id="result"></p>
+      </div>
+      <!-- Fim do código do jogo -->
+    
+      <script>
+        var secretNumber = Math.floor(Math.random() * 10) + 1;
+    
+        function checkGuess() {
+          var guess = document.getElementById("guess").value;
+          var result = document.getElementById("result");
+    
+          if (guess == secretNumber) {
+            result.innerHTML = "Você acertou! O número era " + secretNumber + ".";
+            result.style.color = "green";
+          } else {
+            result.innerHTML = "Tente novamente! O número era " + secretNumber + ".";
+            result.style.color = "red";
+          }
+        }
+      </script>
+    </body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site com Jogo</title>
+    <style>
+        /* Definir a cor de fundo */
+        body {
+            background-color: #eb2f16; /* Cor de fundo azul claro */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos do Jogo */
+        #game {
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #746d6d;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+        }
+
+        #guess {
+            padding: 8px;
+            font-size: 16px;
+            width: 50px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            background-color: #e9ec22;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #d6d31f;
+        }
+
+        #result {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8SfQCpeo2r7jXLvEr9v528Ye9yyrPq4t2sA&sS" alt="descrição da imagem">
+ 
+  
+
+
+
+  
+
